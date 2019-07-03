@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    vault_api (2.0.0)
+    vault_api (1.0.0)
       activesupport
       hashie
       nokogiri
