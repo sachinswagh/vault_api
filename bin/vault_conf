@@ -1,0 +1,43 @@
+# !/bin/bash
+
+# Default Values
+env=""
+config_folder_path=""
+
+# Show help
+help(){
+   echo "(-a) action (EX- upload_files)"
+   echo "(-l) config_folder_path having *yml files"
+   echo "(-h) help "
+ }
+
+while getopts a:l:h option;
+    do
+        case "$option" in
+        a)
+         action=${OPTARG};;
+        l)
+         config_folder_path=${optionARG};;
+        h)
+         helpflag="true"
+         help ;;
+    esac
+done
+
+if [ "$action" == 'upload_files' ]; then
+    if [ -z $action ]
+    then
+       echo " (-a) action (EX- upload_files)"
+    exit 1
+   fi
+
+   if [ -z $config_folder_path ]
+    then
+        echo " (-l)  config_folder_path having *yml files"
+    exit 1
+    fi
+    # To upload all config file to vault
+    bundle exec rake upload[$config_folder_path]
+elif [ ! helpflag ]; then
+   echo "Unknown paramter"
+fi

@@ -1,0 +1,10 @@
+=== 2.0.0
+* Reorganised directory structure.
+* Increased the configurability.
+* Renamed the configs to secrets.
+* Added ability to add and delete keys.
+* Added ability to clone keys from global to target_users.
+* Added ability to configure capabilities for .
+* Added ability for CRUD operations for Users, Paths, Policies, Secrets, Entries.
+=== 1.0.0
+* Added Vault API.
