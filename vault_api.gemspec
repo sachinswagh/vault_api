@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sachin S Wagh']
   spec.email         = ['sachinwagh2392@gmail.com']
 
-  spec.summary       = 'Client for the vault_api API'
-  spec.description   = 'Client for the vault_api API'
-  spec.homepage      = ''
+  spec.summary       = 'Ruby Client for the Vault Gem'
+  spec.description   = 'Ruby Client for the Vault Gem'
+  spec.homepage      = 'https://github.com/sachinswagh/vault_api'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
