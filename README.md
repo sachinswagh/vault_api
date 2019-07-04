@@ -69,7 +69,7 @@ VaultApi.configure do |config|
 end
 client = VaultApi.client
 ```
-## Limitations in Configuration
+#### Limitations in Configuration
 
 To configure Vault as a root user, you must specify 'token' parameter in configuration and do not specify 'user' and 'password' parameters.
 
@@ -78,7 +78,7 @@ in configuration not do not specify 'token' parameter.
 
 If you specify both i.e. 'token' and 'user-password' configurations then 'user-password' would be prefered over 'token' configuration. Still vault-api may not behave as expected.
 
-##### Example calls
+## Example calls
 
 ##### 1. Secrets
 ###### i) Add a secret file.
